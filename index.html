@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+        }
+        .card{
+            height: 600px;
+            width: 380px;
+            background: white;
+            border-radius: 10px;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 5px 5px 10px rgb(34, 14, 84);
+            
+        }
+        .card img{
+            height:200px;
+            width: 380px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .text{
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            text-align: center;
+        }
+        .text h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .text p{
+            font-family:'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-style: italic;
+            font-display: fallback;
+            color: rgb(38, 38, 84);
+            font-weight: bold;
+        }
+        .amountbox{
+            width:80%;
+            height:10%;
+            background: rgb(55, 109, 233);
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right:20px;
+            padding-left: 20px;
+        }
+        .leftbox{
+            width:fit-content;
+            display: flex;
+            gap:15px;
+        }
+        .right{
+            text-decoration: none;
+            color: #a4e85c;
+        }
+        .textamountbox p:first-child{
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .textamountbox p:last-child{
+            font-size: 13px;
+            color: rgb(230, 230, 230);
+        }
+        #payment{
+            height:36px;
+            width:60%;
+            margin: 10px;
+            background-color: #a79cda;
+            border: 0px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 18px;
+            transition: all 0.5s ease;
+        }
+        .imgebox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .imgebox img{
+            height:40px;
+            width:40px;
+            border-radius: 8px;
+        }
+        #payment:hover {
+            cursor: pointer;
+            background-color: #6a5ea3;
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(67, 150, 79, 0.5);
+        }   
+        #payment:active {
+            transform: scale(0.95);
+            box-shadow: 0px 4px 10px rgba(66, 8, 8, 0.3);
+        }
+        .cancel a{
+            text-decoration: none;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div>
+                <img src="internet-shopping-illustration-with-people-buying-online-R2CWNH.jpg" alt="no image">
+            </div>
+            <div class="text">
+                <h2>Order Summary</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos provident, error inventore veniam est, pariatur sequi minima quo veritatis .</p>
+            </div>
+            <div class="amountbox">
+                <div class="leftbox">
+                    <div class="imgebox">
+                        <img src="music.jpg" alt="">
+                    </div>
+                    <div class="textamountbox">
+                        <p>Amount plan</p>
+                        <p>$99.0/year</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://spotify.com">change</a>
+                </div>
+            </div>
+            <button id="payment">proceed to payment</button>
+            <div class="cancel">
+                <a href="https://www.flipkart.com/">cancel order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
