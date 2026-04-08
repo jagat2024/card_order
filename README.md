@@ -7,7 +7,7 @@ This project focuses on layout design, flexbox alignment, and interactive UI ele
 
 ## 🚀 Live Demo
 
-👉 https://jagat2024.github.io/youtube_qr/
+👉 (https://jagat2024.github.io/card_order/)
 
 ---
 
